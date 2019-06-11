@@ -1,0 +1,9 @@
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  font-size: 30px;
+  font-weight: bold;
+  color: darkslateblue;
+}
