@@ -101,10 +101,12 @@ and open the template in the editor.
   </head>
   <body>
     <div>
-      <label>Search by Name:</label>
-      <input type="text" id="search" onkeyup="typeFilter(this.value)" />
-      <select id="sel" onchange="selChange()"></select>
-      <input type="button" value="Show All People" onclick="loadDoc()" />
+      <div class="search-stuff">
+        <label>Search by Name:</label>
+        <input type="text" id="search" onkeyup="typeFilter(this.value)" />
+        <select id="sel" onchange="selChange()"></select>
+        <input type="button" value="Show All People" onclick="loadDoc()" />
+      </div>
       <table>
         <thead>
           <tr>
