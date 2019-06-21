@@ -4,11 +4,11 @@ html {
 }
 
 body {
-  border: solid 3px red;
   display: inline-block;
   margin: auto;
   width: 50%;
   padding: 20px;
+  background-color: lightgray;
 }
 
 label {
@@ -16,16 +16,17 @@ label {
 }
 
 .search-stuff {
-  border: solid 3px blue;
-  padding: 15px;
+  padding: 20px;
+  margin-left: 45px;
 }
 
 table {
-  border: solid 3px purple;
+  border: solid 3px lightslategray;
   padding: 15px;
   width: 75%;
   text-align: center;
   margin: auto;
+  background-color: white;
 }
 
 th {
