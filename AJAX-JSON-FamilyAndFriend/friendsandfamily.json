@@ -1,0 +1,14 @@
+{
+  "people": [
+    { "name": "Ryder", "lname": "Lund", "relation": "Brother" },
+    { "name": "Drew", "lname": "Lovato", "relation": "Brother" },
+    { "name": "Kylee", "lname": "Lund", "relation": "Sister" },
+    { "name": "John", "lname": "Lund", "relation": "Father" },
+    { "name": "Natalie", "lname": "Nielsen", "relation": "Friend" },
+    { "name": "Kaiju", "lname": "Lund", "relation": "K9" },
+    { "name": "Gojira", "lname": "Lund", "relation": "K9" },
+    { "name": "Kristine", "lname": "Francis", "relation": "Cousin" },
+    { "name": "Jean", "lname": "Lund", "relation": "Grandma" },
+    { "name": "Chelsea", "lname": "Chandler", "relation": "Friend" }
+  ]
+}
