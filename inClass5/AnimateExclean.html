@@ -9,7 +9,7 @@ and open the template in the editor.
     <title>JQuery Animation Examples</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="/jquery.min.js"></script>
+    <script src="/inClass5/jquery.min.js"></script>
     <script>
       $(document).ready(function() {
         $("#Gallery a").click(function(evt) {
@@ -24,9 +24,9 @@ and open the template in the editor.
           newImage.fadeIn(2000);
           oldImage.fadeOut(2000, function() {
             $(this).remove();
-          }); // end fadeout
-        }); // end click on ship
-        //$('#gallery a:first').click();
+          });
+        });
+        $("#gallery a:first").click();
 
         $("#Gallery img").each(function() {
           var imgFile = $(this).attr("src");
@@ -41,8 +41,8 @@ and open the template in the editor.
             function() {
               $(this).attr("src", imgFile);
             }
-          ); // end hover over image
-        }); // end each for roll over
+          );
+        });
         $("#flip").click(function() {
           $("#panel").slideToggle("slow");
         });
