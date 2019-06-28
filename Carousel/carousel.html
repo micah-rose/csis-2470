@@ -1,24 +1,24 @@
 <html>
   <head>
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="jquery-cycle-all.js"></script>
-    <script type="text/javascript" src="carousel.js"></script>
+    <script type="text/javascript" src="/Carousel/jquery.js"></script>
+    <script type="text/javascript" src="/Carousel/jquery-cycle-all.js"></script>
+    <script type="text/javascript" src="/Carousel/carousel.js"></script>
     <script type="text/javascript">
       var html = "";
       $(document).ready(function() {
-        $.getJSON("products.json", function(data) {
+        $.getJSON("six-things.json", function(data) {
           $.each(data, function(key, value) {
             $.each(value, function(index, stuff) {
               console.log(index + " " + stuff.Activity);
               html += '<div class="things">';
-              html += '<h2 id="location">' + stuff.Location + "</h2>";
-              html += "<h4>" + stuff.Activity + "</h4>";
+              html += '<h2 id="location">' + stuff.Activity + "</h2>";
+              html += "<h4>" + stuff.Location + "</h4>";
               html +=
                 '<p onclick="sixThings(' +
                 stuff.id +
                 ')"style="position: relative;"><img src="' +
                 stuff.Image +
-                '"style="max-width:100%; max-height:100%;"></p></div>';
+                '"style="width:350px; height:250px; border: solid 4px black;"></p></div>';
             });
           });
           $("#things").html(html);

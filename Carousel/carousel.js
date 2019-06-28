@@ -32,9 +32,9 @@ function sixThings(t) {
         if (jsonObj.things[i].id == t) {
           text =
             text +
-            jsonObj.things[i].Location +
-            " " +
             jsonObj.things[i].Activity +
+            " - " +
+            jsonObj.things[i].Location +
             "<br>" +
             jsonObj.things[i].Desc;
           var selection = i;
