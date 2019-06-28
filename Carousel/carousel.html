@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery-cycle-all.js"></script>
+    <script type="text/javascript" src="carousel.js"></script>
+    <script type="text/javascript">
+      var html = "";
+      $(document).ready(function() {
+        $.getJSON("products.json", function(data) {
+          $.each(data, function(key, value) {
+            $.each(value, function(index, stuff) {
+              console.log(index + " " + stuff.Activity);
+              html += '<div class="things">';
+              html += '<h2 id="location">' + stuff.Location + "</h2>";
+              html += "<h4>" + stuff.Activity + "</h4>";
+              html +=
+                '<p onclick="sixThings(' +
+                stuff.id +
+                ')"style="position: relative;"><img src="' +
+                stuff.Image +
+                '"style="max-width:100%; max-height:100%;"></p></div>';
+            });
+          });
+          $("#things").html(html);
+          $("#things").cycle({
+            fx: "fade",
+            pause: "1",
+            prev: "#prev",
+            next: "#next",
+            speed: 500,
+            timeout: 10000
+          });
+        });
+      });
+    </script>
+    <title>Carousel</title>
+    <link type="text/css" rel="stylesheet" href="/Carousel/carousel.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="main">Carousel of Things I Like To Do</div>
+    <div>
+      <table style="width:650px">
+        <tr style="height: auto">
+          <td><a href="#" id="prev">Previous</a></td>
+          <td style="width: 300px; height: auto"><div id="things"></div></td>
+          <td><a href="#" id="next">Next</a></td>
+        </tr>
+      </table>
+    </div>
+    <div id="information">
+      <figure>
+        <figcaption></figcaption>
+      </figure>
+    </div>
+  </body>
+</html>
