@@ -1,3 +1,5 @@
+//Function to get details of six things when image is clicked
+
 function sixThings(t) {
   console.log(t);
   var data_file = "six-things.json";
@@ -35,7 +37,7 @@ function sixThings(t) {
             jsonObj.things[i].Activity +
             " - " +
             jsonObj.things[i].Location +
-            "<br>" +
+            "<br><br>" +
             jsonObj.things[i].Desc;
           var selection = i;
         }
