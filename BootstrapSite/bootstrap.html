@@ -7,14 +7,16 @@
         <title>Sample Web Page</title>
         <META http-equiv="Content-Type" content="text/html; charset=utf-8">
         <META name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="/BootstrapSite/bootstrap/css/bootstrap.css" />
         <style>
             .tt { font-family:monospace }
             .example { font-family:monospace; white-space:pre; overflow-x:auto; }
         </style>
     </head>
 
-    <body style="width:100%; max-width:720px">
-
+    <body>
+        <!-- style="width:100%; max-width:720px" -->
+        <div class="jumbotron text-center" style="background-color: lightgreen; color: white; margin-bottom: 0px;">
         <h2>Sample Web Page</h2>
         <img
             alt="Brief description" 
@@ -32,9 +34,12 @@
             Sat Jan 17 12:07:32 2004
             <br>
             Updated 26 May 2019 for HTML5.
+        </p>
+        </div>
 
+        <div class="col-lg-3" style="padding: 10px; border: 5px solid black;">
         <h3 id="contents">CONTENTS</h3>
-
+<!-- style="list-style-type: none; margin-right: 45px;" -->
         <ol>
             <li><a href="#basics">Creating a Web Page</a>
             <li><a href="#syntax">HTML Syntax</a>
@@ -47,9 +52,10 @@
             <li><a href="#install">Installing your Web Page on the Internet</a>
             <li><a href="#more">Where to go from here</a>
         </ol>
-        <p>
-        <hr>
+      
+            </div>
 
+        <div class="col-md-9" style="background-color: lightsalmon; padding: 5px;">
         <h3 id="basics">1. Creating a Web Page</h3>
 
         This page was typed by hand.  Anybody can do this, you don't need any
@@ -84,7 +90,11 @@
 
         </dl>
 
+    </div>
+
         <hr>
+
+        <div class="p-3 mb-2 bg-primary text-white col-md-12">
         <h3 id="syntax">2. HTML Syntax</h3>
 
         Web pages are written in Hyper Text Markup Language (HTML).  HTML has three
@@ -203,7 +213,11 @@ This sentence contains &lt;b&gt;bold&lt;/b&gt; text.
             The next sections tell how to achieve different kinds of effects.
 
         <p>
+
+        </div>
         <hr>
+
+        <div class="col-md-9" style="background-color: lavender; padding: 62px 20px;">
         <h3 id="chars">3. Special Characters</h3>
 
         HTML special "character entities" start with ampersand (<span class="tt">&amp;</span>) and
@@ -211,7 +225,7 @@ This sentence contains &lt;b&gt;bold&lt;/b&gt; text.
         ever-popular "no-break space" is <span class="tt">&amp;nbsp;</span>.  There are special
         entity names for accented Latin letters and other West European special
         characters such as:
-
+            <hr>
         <p>
         <blockquote>
             <table border>
@@ -252,9 +266,9 @@ This sentence contains &lt;b&gt;bold&lt;/b&gt; text.
             </table>
         </blockquote>
         <p>
-
+            <hr>
             Examples:
-
+            <p>
         <dl>
             <dt>For <b>Spanish</b> you would need:
             <dd><span class="tt">&amp;Aacute;</span> (&Aacute;),
@@ -287,6 +301,8 @@ This sentence contains &lt;b&gt;bold&lt;/b&gt; text.
 
         </dl>
         <p>
+            <p>
+        
 
             <a href="entities.html">CLICK HERE</a>
             for a complete list.  When the page encoding is
@@ -305,9 +321,11 @@ This sentence contains &lt;b&gt;bold&lt;/b&gt; text.
             <span class="tt">&amp;amp;</span>, <span class="tt">&amp;gt;</span>, respectively.
 
         <p>
-        <hr>
+       
         <p>
 
+        </div>
+        <div class="col-md-3" style="border: 5px solid black;">
         <h3 id="convert">4. Converting Plain Text to HTML</h3>
 
         If you have a plain text file that you want to convert to HTML, load the
@@ -342,7 +360,11 @@ This sentence contains &lt;b&gt;bold&lt;/b&gt; text.
             will have to put the effects back by hand (next section).
 
         </p>
+
+    </div>
         <hr>
+
+        <div class="jumbotron col-md-12" style="margin-bottom: 0px;"> 
         <h3 id="effects">5. Effects</h3>
 
         The rest of this document shows some of what you can do with simple HTML
@@ -404,9 +426,10 @@ This sentence contains &lt;b&gt;bold&lt;/b&gt; text.
         And here we are back outside of the first blockquote.
 
     <p>
-    <hr>
-    <p>
 
+    </div>
+
+            <div class="col-md-12" style="background-color: teal; color: white; padding: 20px;">
     <h3 id="lists">6. Lists</h3>
 
     Here is an Unordered (bullet) List (<span class="tt">&lt;ul&gt;..&lt;ul&gt;</span>):
@@ -486,8 +509,11 @@ This sentence contains &lt;b&gt;bold&lt;/b&gt; text.
     </ol>
 
     <p>
+
+    </div>
     <hr>
 
+    <div class="p-3 mb-2 bg-warning text-dark col-md-12">
     <h3 id="links">7. Links</h3>
 
     Links can be internal within a Web page (like to
@@ -495,8 +521,9 @@ This sentence contains &lt;b&gt;bold&lt;/b&gt; text.
     can be to external web pages or pictures on the same website, or they
     can be to websites, pages, or pictures anywhere else in the world.
 
+    <hr>
     <p>
-
+        <div class="text-center">
         Here is a link to the <a href="http://www.columbia.edu/kermit/">Kermit
             Project home page</a>.
 
@@ -515,17 +542,23 @@ This sentence contains &lt;b&gt;bold&lt;/b&gt; text.
 
         Here is a link to a picture:
         <a href="picture-of-something.jpg">CLICK HERE</a> to see it.
-
+    </div>
     <p>
-    <hr>
+            <hr>
+        </div>
+    
 
+        <div class="col-md-12" style="border: 5px solid black; padding: 15px;">
     <h3 id="tables">8. Tables</h3>
 
+        <div class="row">
+               
+                        <div class="col-md-4"> 
     Here's a simple table with some headings and a few rows:
 
     <p>
     <blockquote>
-
+            
         <table>
             <tr>            <!-- start table row -->
                 <th>Heading A   <!-- table heading -->
@@ -544,10 +577,13 @@ This sentence contains &lt;b&gt;bold&lt;/b&gt; text.
                 <td>Cell 3B
                 <td>Cell 3C
         </table>
-
+    
     </blockquote>
-    <p>
 
+
+    <p>
+    </div>
+            <div class="col-md-4">   
         Same table again but with borders:
 
     <p>
@@ -573,14 +609,18 @@ This sentence contains &lt;b&gt;bold&lt;/b&gt; text.
         </table>
 
     </blockquote>
+
     <p>
+            
         The appearance with double borders is the default (and therefore easiest)
         table style.  You can
         use <a href="https://www.w3schools.com/html/html_tables.asp">table
             attributes</a> to change the appearance.
-
+       
     <p>
-
+    </div>
+           
+            <div class="col-md-4"> 
         Here's the same table again but with Column C right-adjusted:
 
     <p>
@@ -606,9 +646,15 @@ This sentence contains &lt;b&gt;bold&lt;/b&gt; text.
         </table>
 
     </blockquote>
-
+</div>
+</div>
+</div>
     <p>
-    <hr>
+ 
+  
+
+    <div class="col-md-12" style="background-color: rgb(202, 82, 82); color: white;">
+            <hr>
     <h3 id="install">9. Installing Your Web Page on the Internet</h3>
 
     How to put your web page on the Internet depends on your Internet Service
@@ -797,6 +843,9 @@ $ <u>cd public_html</u>          <i>(Enter the</i> public_html <i>subdirectory)<
         with the server's Unix environment and commands and utilities.
 
     <p>
+        </div>
+
+        <div class="col-md-12" style="background-color: rgb(235, 152, 59);">
     <hr>
     <h3 id="more">10. Where to go from here</h3>
 
@@ -858,5 +907,6 @@ $ <u>cd public_html</u>          <i>(Enter the</i> public_html <i>subdirectory)<
         <i>(End)</i>
 
     <hr>
+</div>
 </body>  
 </html>  
